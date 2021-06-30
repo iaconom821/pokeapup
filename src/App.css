@@ -17,3 +17,9 @@
   height: .4in;
   width: .4in;
 }
+
+.dogContainer {
+  height: 88vh;
+  width: 100vw;
+  float: bottom;
+}
