@@ -7,6 +7,7 @@ function App() {
 
   const dogImg = <img className="dogPic" src={doge} alt="doge" onClick={(e) => handleClick(e)} /> 
 
+
   function handleClick (e) {
     const posx = (Math.random() * (document.getElementById("dogContainer").offsetWidth - 38)).toFixed();
     const posy = (Math.random() * (document.getElementById("dogContainer").offsetHeight - 38)).toFixed();
@@ -17,11 +18,16 @@ function App() {
     setPlayerScore((oldScore => oldScore += 1))
   }
 
+  
+
   return ( 
     <>
-    <h1>{playerScore}</h1>
+    <h2>Poke-a-Pup</h2>
+    <h3>Pup Poked {playerScore} times!</h3>
     <div className="dogContainer" id="dogContainer">
-    {dogImg}
+      <div id="clouds">
+        {dogImg}
+      </div>
     </div>
     </>
   )
