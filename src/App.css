@@ -13,6 +13,11 @@
   }
 }
 
+.titleText {
+  margin: 0;
+  text-align: center;
+}
+
 .dogPic {
   height: .4in;
   width: .4in;
@@ -22,7 +27,7 @@
 }
 
 .dogContainer {
-  height: 88vh;
+  height: 80vh;
   width: 100vw;
   float: bottom;
 }
